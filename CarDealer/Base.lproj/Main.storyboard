@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="McC-S0-Sda">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Favorites-->
+        <scene sceneID="jQk-lH-bcL">
+            <objects>
+                <viewController id="bLW-vb-dZs" customClass="FavouriteViewController" customModule="CarDealer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ETT-S5-bYx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="gp7-Z9-Ja9">
+                                <rect key="frame" x="0.0" y="125" width="414" height="668"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="favouriteCarCell" textLabel="evI-1u-W9U" detailTextLabel="qab-A2-RF1" style="IBUITableViewCellStyleSubtitle" id="l82-hy-y3T">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="l82-hy-y3T" id="JEc-YM-BQT">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="evI-1u-W9U">
+                                                    <rect key="frame" x="20" y="6" width="25" height="14.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qab-A2-RF1">
+                                                    <rect key="frame" x="20" y="22.5" width="30.5" height="13.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Favorite Dealer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QRR-ZL-m6K">
+                                <rect key="frame" x="20" y="74" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="NDJ-67-N48"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="NDJ-67-N48" firstAttribute="bottom" secondItem="gp7-Z9-Ja9" secondAttribute="bottom" constant="20" id="37x-sp-SAo"/>
+                            <constraint firstItem="gp7-Z9-Ja9" firstAttribute="trailing" secondItem="NDJ-67-N48" secondAttribute="trailing" id="Pqx-2k-L3x"/>
+                            <constraint firstItem="gp7-Z9-Ja9" firstAttribute="leading" secondItem="NDJ-67-N48" secondAttribute="leading" id="XGv-uL-SsR"/>
+                            <constraint firstItem="gp7-Z9-Ja9" firstAttribute="top" secondItem="QRR-ZL-m6K" secondAttribute="bottom" constant="30" id="aEY-mK-16g"/>
+                            <constraint firstItem="gp7-Z9-Ja9" firstAttribute="top" secondItem="QRR-ZL-m6K" secondAttribute="bottom" constant="30" id="k04-De-Jge"/>
+                            <constraint firstItem="QRR-ZL-m6K" firstAttribute="top" secondItem="NDJ-67-N48" secondAttribute="top" constant="30" id="t8G-w0-6fV"/>
+                            <constraint firstItem="NDJ-67-N48" firstAttribute="trailing" secondItem="QRR-ZL-m6K" secondAttribute="trailing" constant="20" id="vb1-8N-ooH"/>
+                            <constraint firstItem="QRR-ZL-m6K" firstAttribute="leading" secondItem="NDJ-67-N48" secondAttribute="leading" constant="20" id="yLh-Qy-Igk"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Favorites" image="star.fill" catalog="system" id="fSf-AW-QDq"/>
+                    <connections>
+                        <outlet property="favouriteTableView" destination="gp7-Z9-Ja9" id="6i9-bc-Ekr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tH1-cO-0QK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1298.5507246376812" y="1026.5625"/>
+        </scene>
+        <!--Car Dealers-->
+        <scene sceneID="BM9-fU-lxR">
+            <objects>
+                <viewController id="viy-8U-lRe" customClass="CarListViewController" customModule="CarDealer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mRg-cM-2MS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="0rG-RF-Y69">
+                                <rect key="frame" x="20" y="88" width="374" height="32"/>
+                                <segments>
+                                    <segment title="All  🚗"/>
+                                    <segment title="Petrol 🚙"/>
+                                    <segment title="Diesel 🚚"/>
+                                    <segment title="Electric 🔌"/>
+                                </segments>
+                                <connections>
+                                    <action selector="didChangeFilter:" destination="viy-8U-lRe" eventType="valueChanged" id="9lZ-nQ-ykW"/>
+                                </connections>
+                            </segmentedControl>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="uM2-ss-izR">
+                                <rect key="frame" x="0.0" y="143" width="414" height="670"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CarCell" textLabel="gSg-UN-Dee" detailTextLabel="ZTF-4q-I2w" style="IBUITableViewCellStyleSubtitle" id="gL6-hd-rsZ">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gL6-hd-rsZ" id="9cV-GT-ZWm">
+                                            <rect key="frame" x="0.0" y="0.0" width="385.5" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gSg-UN-Dee">
+                                                    <rect key="frame" x="20" y="6" width="27" height="14.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="0.0"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ZTF-4q-I2w">
+                                                    <rect key="frame" x="20" y="22.5" width="30.5" height="13.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="TuD-dn-KCr" kind="show" identifier="showCarDetail" id="GBm-aE-wYm"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Kdc-UB-nWa"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="uM2-ss-izR" firstAttribute="bottom" secondItem="Kdc-UB-nWa" secondAttribute="bottom" id="0l7-rB-YY8"/>
+                            <constraint firstItem="0rG-RF-Y69" firstAttribute="leading" secondItem="Kdc-UB-nWa" secondAttribute="leading" constant="20" id="0ua-G2-JTy"/>
+                            <constraint firstItem="Kdc-UB-nWa" firstAttribute="trailing" secondItem="0rG-RF-Y69" secondAttribute="trailing" constant="20" id="FD9-72-s6Z"/>
+                            <constraint firstItem="uM2-ss-izR" firstAttribute="top" secondItem="0rG-RF-Y69" secondAttribute="bottom" constant="24" id="SUj-7E-i7K"/>
+                            <constraint firstItem="0rG-RF-Y69" firstAttribute="top" secondItem="Kdc-UB-nWa" secondAttribute="top" id="diO-KT-syG"/>
+                            <constraint firstItem="uM2-ss-izR" firstAttribute="leading" secondItem="Kdc-UB-nWa" secondAttribute="leading" id="meN-yg-yzw"/>
+                            <constraint firstItem="uM2-ss-izR" firstAttribute="trailing" secondItem="Kdc-UB-nWa" secondAttribute="trailing" id="mgF-cE-jgC"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Car Dealers" id="BRN-Vz-byC">
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="Bqj-AZ-DMt">
+                            <connections>
+                                <segue destination="v5B-f3-iBN" kind="presentation" identifier="addCarDealer" id="Qul-5a-JMv"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="uM2-ss-izR" id="56w-bE-Kxl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sO4-QB-Rix" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1298.5507246376812" y="323.4375"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="F1U-jf-btU">
+            <objects>
+                <tabBarController id="McC-S0-Sda" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hw8-Au-9FM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="WLX-B4-4bO" kind="relationship" relationship="viewControllers" id="Mhr-MM-KMG"/>
+                        <segue destination="bLW-vb-dZs" kind="relationship" relationship="viewControllers" id="Bix-Kx-Jjw"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wKm-kP-TBg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-500" y="627"/>
+        </scene>
+        <!--Manufacture-->
+        <scene sceneID="tCv-Nk-LWj">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="WLX-B4-4bO" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Manufacture" image="list.dash" catalog="system" id="Y0k-h2-jXz"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ozm-Of-EMH">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="viy-8U-lRe" kind="relationship" relationship="rootViewController" id="igm-LM-mHn"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="neD-cF-8fj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="389.85507246376812" y="323.4375"/>
+        </scene>
+        <!--CarDetail-->
+        <scene sceneID="zne-ry-eKa">
+            <objects>
+                <viewControllerPlaceholder storyboardName="CarDetail" id="TuD-dn-KCr" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="P9D-5v-K8B"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GEF-gb-0Gc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1882" y="498"/>
+        </scene>
+        <!--AddCar-->
+        <scene sceneID="tge-WP-JQm">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AddCar" id="v5B-f3-iBN" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="1uS-eG-qBT"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mHW-qm-Wfe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1875" y="68"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="list.dash" catalog="system" width="128" height="85"/>
+        <image name="star.fill" catalog="system" width="128" height="116"/>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

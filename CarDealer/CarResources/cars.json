@@ -1,0 +1,66 @@
+[
+    {
+        "name": "Toyota",
+        "locations": "Chatswood, Parramatta, Castle Hill, Newtown",
+        "imageName": "CarResources/toyota.jpg",
+        "thumbnailName": "CarResources/toyota.jpg",
+        "type": "petrol"
+    },
+    {
+        "name": "Tesla",
+        "locations": "Frankston, Glen Waverley, Castle Hill, Caufield",
+        "imageName": "CarResources/tesla.jpg",
+        "thumbnailName": "CarResources/tesla.jpg",
+        "type": "electric"
+    },
+    {
+        "name": "Mitsubishi",
+        "locations": "Chadstone, Flinder Street, Ringwood, Hallam",
+        "imageName": "CarResources/mitsubishi.jpg",
+        "thumbnailName": "CarResources/mitsubishi.jpg",
+        "type": "diesel"
+    },
+    {
+        "name": "Mazda",
+        "locations": "Dandenong, Springvale, Burwood, Don Caster",
+        "imageName": "CarResources/mazda.jpg",
+        "thumbnailName": "CarResources/mazda.jpg",
+        "type": "petrol"
+    },
+    {
+        "name": "Mercedes",
+        "locations": "Keysborough, Clayton, St Kilda, Newtown",
+        "imageName": "CarResources/mercedes.jpg",
+        "thumbnailName": "CarResources/mercedes.jpg",
+        "type": "petrol"
+    },
+    {
+        "name": "Holden",
+        "locations": "Chatswood, Noble Park, Mornington, Oakleigh",
+        "imageName": "CarResources/holden.jpg",
+        "thumbnailName": "CarResources/holden.jpg",
+        "type": "diesel"
+    },
+    {
+        "name": "BMW",
+        "locations": "Caufield, Edenwood, Castle Hill, Sandown Park",
+        "imageName": "CarResources/bmw.jpg",
+        "thumbnailName": "CarResources/bmw.jpg",
+        "type": "diesel"
+    },
+    {
+        "name": "Audi",
+        "locations": "Springvale, Noble Park, Mornington, Keysborough",
+        "imageName": "CarResources/audi.jpg",
+        "thumbnailName": "CarResources/audi.jpg",
+        "type": "petrol"
+    },
+    {
+        "name": "Wolswagen",
+        "locations": "Dandenong, Frankston, Edenwood, Ringwood",
+        "imageName": "CarResources/wolswagen.jpg",
+        "thumbnailName": "CarResources/wolswagen.jpg",
+        "type": "electric"
+    }
+    
+]
